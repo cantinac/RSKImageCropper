@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57ADA1691BC57ED600D6E198 /* RSKInternalUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 57ADA1671BC57ED600D6E198 /* RSKInternalUtility.h */; settings = {ASSET_TAGS = (); }; };
+		57ADA16A1BC57ED600D6E198 /* RSKInternalUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 57ADA1681BC57ED600D6E198 /* RSKInternalUtility.m */; settings = {ASSET_TAGS = (); }; };
 		A5BE39D91B32BD2B00ECDF88 /* RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BE39CB1B32BD2B00ECDF88 /* RSKImageCropper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A5BE39DA1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h in Headers */ = {isa = PBXBuildFile; fileRef = A5BE39CC1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h */; };
 		A5BE39DB1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5BE39CD1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.m */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		57ADA1671BC57ED600D6E198 /* RSKInternalUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSKInternalUtility.h; path = RSKImageCropper/RSKInternalUtility.h; sourceTree = "<group>"; };
+		57ADA1681BC57ED600D6E198 /* RSKInternalUtility.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RSKInternalUtility.m; path = RSKImageCropper/RSKInternalUtility.m; sourceTree = "<group>"; };
 		A5BE393D1B32B49D00ECDF88 /* RSKImageCropper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RSKImageCropper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5BE39CB1B32BD2B00ECDF88 /* RSKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RSKImageCropper.h; path = RSKImageCropper/RSKImageCropper.h; sourceTree = "<group>"; };
 		A5BE39CC1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CGGeometry+RSKImageCropper.h"; path = "RSKImageCropper/CGGeometry+RSKImageCropper.h"; sourceTree = "<group>"; };
@@ -72,6 +76,8 @@
 		A5BE39AD1B32BAAC00ECDF88 /* RSKImageCropper */ = {
 			isa = PBXGroup;
 			children = (
+				57ADA1671BC57ED600D6E198 /* RSKInternalUtility.h */,
+				57ADA1681BC57ED600D6E198 /* RSKInternalUtility.m */,
 				A5BE39CB1B32BD2B00ECDF88 /* RSKImageCropper.h */,
 				A5BE39CC1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h */,
 				A5BE39CD1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.m */,
@@ -112,6 +118,7 @@
 				A5BE39DF1B32BD2B00ECDF88 /* RSKImageScrollView.h in Headers */,
 				A5BE39E51B32BD2B00ECDF88 /* UIImage+RSKImageCropper.h in Headers */,
 				A5BE39E11B32BD2B00ECDF88 /* RSKTouchView.h in Headers */,
+				57ADA1691BC57ED600D6E198 /* RSKInternalUtility.h in Headers */,
 				A5BE39E31B32BD2B00ECDF88 /* UIApplication+RSKImageCropper.h in Headers */,
 				A5BE39DA1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.h in Headers */,
 			);
@@ -144,7 +151,7 @@
 		A5BE39341B32B49D00ECDF88 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0700;
 				TargetAttributes = {
 					A5BE393C1B32B49D00ECDF88 = {
 						CreatedOnToolsVersion = 6.3.2;
@@ -186,6 +193,7 @@
 				A5BE39E41B32BD2B00ECDF88 /* UIApplication+RSKImageCropper.m in Sources */,
 				A5BE39E01B32BD2B00ECDF88 /* RSKImageScrollView.m in Sources */,
 				A5BE39DB1B32BD2B00ECDF88 /* CGGeometry+RSKImageCropper.m in Sources */,
+				57ADA16A1BC57ED600D6E198 /* RSKInternalUtility.m in Sources */,
 				A5BE39DD1B32BD2B00ECDF88 /* RSKImageCropViewController.m in Sources */,
 				A5BE39E61B32BD2B00ECDF88 /* UIImage+RSKImageCropper.m in Sources */,
 				A5BE39E21B32BD2B00ECDF88 /* RSKTouchView.m in Sources */,
@@ -217,6 +225,7 @@
 				CURRENT_PROJECT_VERSION = 1.3.1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -293,6 +302,7 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ruslanskorb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RSKImageCropper;
 				SKIP_INSTALL = YES;
 			};
@@ -308,6 +318,7 @@
 				INFOPLIST_FILE = Framework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ruslanskorb.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = RSKImageCropper;
 				SKIP_INSTALL = YES;
 			};
